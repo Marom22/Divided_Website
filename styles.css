@@ -133,8 +133,8 @@ h1 {
 
 #logo {
     position: absolute;
-    top: 5px;
-    right: -100px;
+    top: 0;
+    right: 0;
     transform: scale(0.5); 
     cursor: pointer;
 }
