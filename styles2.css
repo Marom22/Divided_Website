@@ -52,9 +52,9 @@ nav ul li a:hover {
 
 #logo {
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: scale(0.5); 
+    top: -142px;
+    right: -260px;
+    transform: scale(0.4); 
     cursor: pointer;
 }
 
