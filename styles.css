@@ -123,8 +123,8 @@ h1 {
 .text-bubble::before {
     content: "";
     position: absolute;
-    top: 50%;
-    right: -10px;
+    top: 40px;
+    right: -8px;
     border-width: 10px 0 10px 10px;
     border-style: solid;
     border-color: transparent transparent transparent white;
@@ -133,9 +133,9 @@ h1 {
 
 #logo {
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: scale(0.5); 
+    top: -200px;
+    right: -260px;
+    transform: scale(0.4); 
     cursor: pointer;
 }
 
