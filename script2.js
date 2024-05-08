@@ -58,15 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get the logo element
     var logo = document.getElementById('logo');
 
-    // Add a click event listener to the logo
     logo.addEventListener('click', function(event) {
         // Prevent the default behavior of following the link
         event.preventDefault();
+        
+        // Redirect to the main page
+        window.location.href = "page1.html";
 
-        // Log a message to the console to check if the event listener is triggered
-        console.log("Logo clicked!");
-
-        // Refresh the current page
-        location.reload();
-    });
+})
 });
