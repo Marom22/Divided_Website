@@ -1,0 +1,161 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(84, 245, 84) 20%, white 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1800px;
+    height: 850px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+#content {
+    text-align: center;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.game {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #45a049;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.game a {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    width: fit-content;
+    display: block;
+}
+
+h1 {
+    margin-top: -170px;
+    text-align: center;
+    margin-left: -50px;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.animated-monkey {
+    position: absolute;
+    top: calc(50% + 70px);
+    left: 40%;
+    transform: translateX(-50%) scale(0);
+    animation: swingIn 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+.text-bubble {
+    position: absolute;
+    top: calc(50% + 300px);
+    left: 41%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.animated-monkey.show-bubble + .text-bubble {
+    opacity: 1;
+}
+
+.text-bubble::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+    transform: translateY(-50%);
+}
+
+#logo {
+    position: absolute;
+    top: -175px;
+    right: calc(-5.5% - 5px);
+    transform: scale(0.5); 
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    header, footer {
+        text-align: center;
+    }
+}
+
+/* <-- Monkey Pic Enters Screen --> */
+@keyframes swingIn {
+    from {
+        transform: translateY(-100%) rotate(-3600deg);
+    }
+    to {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+#content h2 {
+    text-align: left; 
+    margin-left: 30px;
+}

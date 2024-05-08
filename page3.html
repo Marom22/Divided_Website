@@ -1,0 +1,67 @@
+<!-- page3.html -->
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marom's Website</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <!-- Body Content -->
+    <div id="content">
+        <!-- Logo -->
+        <a id="logo">
+            <img src="https://i.imgur.com/4IN66ev.png" alt="Marom Zur Logo">
+        </a>        
+        <h1>Marom's Website</h1>
+        <!-- Games Section -->
+        <section id="game-section">
+            <br></br>
+            <!-- Game Canvas -->
+            <canvas id="gameCanvas" width="500" height="333"></canvas>
+            <!-- Score Display -->
+            <div id="scoreDisplay">Score: <span id="score">0</span></div>
+            <br></br>
+            <!-- High Score Display -->
+            <div id="highScoreDisplay">High Score: <span id="highScore">0</span></div>
+            <br></br>
+        </section>
+         
+        <!-- Button to reset high score -->
+        <button id="resetHighScoreBtn">Reset High Score</button>
+        
+        <!-- Button to start a new game -->
+        <button id="newGameBtn">New Game</button>
+    </div>
+
+    <footer>
+        <!-- Footer -->
+        <p>🦍 All rights reserved to Marom Zur &copy; 🦍</p>
+    </footer>
+       
+        <!-- Controls Section -->
+        <div id="controls">
+            <div>
+                <button onclick="moveUp()">Up</button>
+            </div>
+            <div>
+                <button onclick="moveLeft()">Left</button>
+                <button onclick="moveRight()">Right</button>
+            </div>
+            <div>
+                <button onclick="moveDown()">Down</button>
+            </div>
+        </div>
+        
+        <!-- Instructions Section -->
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <p>Use arrow keys (buttons\ keyboard) to move the green square.</p>
+            <p>Avoid touching the edges of the box.</p>
+            <p>Try to get the highest score!</p>
+        </div>
+
+        <script src="script3.js"></script>
+</body>
+</html>

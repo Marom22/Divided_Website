@@ -1,0 +1,117 @@
+/* styles2.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(84, 245, 84) 20%, white 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1800px;
+    height: 850px;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+#content {
+    text-align: center;
+    margin-bottom: auto;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: -117px;
+    right: calc(-5.5% - 5px);
+    transform: scale(0.5);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    header,
+    footer {
+        text-align: center;
+    }
+}
+
+#games {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.game {
+    margin-bottom: 20px;
+}
+
+#game-section {
+    display: block;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit-guess,
+#new-game {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#submit-guess:hover,
+#new-game:hover {
+    background-color: #45a049;
+}
+
+#guess-input {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    padding: 3px;
+    border: 3px solid #0f0c0c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#submit-guess {
+    margin-bottom: 10px;
+}
